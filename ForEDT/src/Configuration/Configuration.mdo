@@ -127,6 +127,7 @@
   <commonModules>CommonModule.ГеопозиционированиеСервер</commonModules>
   <commonModules>CommonModule.УведомленияКлиент</commonModules>
   <commonModules>CommonModule.УведомленияСервер</commonModules>
+  <commonModules>CommonModule.ИнтеграцияСервер</commonModules>
   <exchangePlans>ExchangePlan.Мобильные</exchangePlans>
   <xDTOPackages>XDTOPackage.ОбменСМобильнымУстройством</xDTOPackages>
   <webServices>WebService.MAExchange</webServices>
