@@ -2,87 +2,64 @@
 <diagram>
 	<tab name="ForEDT" projectName="ForEDT;">
 		<entities>
-			<entity x="500" y="438" width="200" height="55" eClass="Catalog" uri="bm://ForEDT/Catalog.Склады#/">
+			<entity x="750" y="248" width="200" height="55" eClass="Document" uri="bm://ForEDT/Document.РасходТовара#/">
 			</entity>
-			<entity x="200" y="69" width="200" height="74" eClass="AccumulationRegister" uri="bm://ForEDT/AccumulationRegister.Взаиморасчеты#/">
+			<entity x="750" y="433" width="200" height="55" eClass="Catalog" uri="bm://ForEDT/Catalog.Склады#/">
 			</entity>
-			<entity x="1575" y="438" width="200" height="55" eClass="Catalog" uri="bm://ForEDT/Catalog.Товары#/">
+			<entity x="200" y="63" width="200" height="55" eClass="Document" uri="bm://ForEDT/Document.ОперацияПоУчетуТоваров#/">
 			</entity>
-			<entity x="1275" y="223" width="200" height="135" eClass="Document" uri="bm://ForEDT/Document.ПриходТовара#/">
+			<entity x="1050" y="433" width="200" height="55" eClass="Catalog" uri="bm://ForEDT/Catalog.Товары#/">
 			</entity>
-			<entity x="200" y="438" width="200" height="55" eClass="Catalog" uri="bm://ForEDT/Catalog.Валюты#/">
+			<entity x="1050" y="248" width="200" height="55" eClass="Document" uri="bm://ForEDT/Document.ПриходТовара#/">
 			</entity>
-			<entity x="1025" y="223" width="200" height="55" eClass="Catalog" uri="bm://ForEDT/Catalog.Организации#/">
-			</entity>
-			<entity x="1275" y="653" width="200" height="55" eClass="Catalog" uri="bm://ForEDT/Catalog.Контрагенты#/">
-			</entity>
-			<entity x="500" y="69" width="200" height="74" eClass="AccumulationRegister" uri="bm://ForEDT/AccumulationRegister.ТоварныеЗапасы#/">
+			<entity x="450" y="63" width="200" height="105" eClass="AccumulationRegister" uri="bm://ForEDT/AccumulationRegister.ТоварныеЗапасы#/">
 			</entity>
 		</entities>
 		<relations for="main">
+			<relation source="РегистрНакопления.ТоварныеЗапасы" target="Документ.РасходТовара">
+				<pathPoint x="650" y="115"></pathPoint>
+				<pathPoint x="850" y="115"></pathPoint>
+				<pathPoint x="850" y="248"></pathPoint>
+			</relation>
 			<relation source="РегистрНакопления.ТоварныеЗапасы" target="Справочник.Склады">
-				<pathPoint x="600" y="143"></pathPoint>
-				<pathPoint x="600" y="290"></pathPoint>
-				<pathPoint x="600" y="438"></pathPoint>
-			</relation>
-			<relation source="Справочник.Товары" target="Справочник.Контрагенты">
-				<pathPoint x="1575" y="465"></pathPoint>
-				<pathPoint x="1375" y="465"></pathPoint>
-				<pathPoint x="1375" y="653"></pathPoint>
-			</relation>
-			<relation source="Документ.ПриходТовара" target="Справочник.Валюты">
-				<pathPoint x="1375" y="358"></pathPoint>
-				<pathPoint x="1375" y="406"></pathPoint>
-				<pathPoint x="315" y="406"></pathPoint>
-				<pathPoint x="315" y="438"></pathPoint>
-			</relation>
-			<relation source="РегистрНакопления.Взаиморасчеты" target="Документ.ПриходТовара">
-				<pathPoint x="300" y="143"></pathPoint>
-				<pathPoint x="300" y="175"></pathPoint>
-				<pathPoint x="1360" y="175"></pathPoint>
-				<pathPoint x="1360" y="223"></pathPoint>
-			</relation>
-			<relation source="РегистрНакопления.Взаиморасчеты" target="Справочник.Валюты">
-				<pathPoint x="300" y="143"></pathPoint>
-				<pathPoint x="300" y="290"></pathPoint>
-				<pathPoint x="300" y="438"></pathPoint>
-			</relation>
-			<relation source="Документ.ПриходТовара" target="Справочник.Организации">
-				<pathPoint x="1275" y="250"></pathPoint>
-				<pathPoint x="1225" y="250"></pathPoint>
+				<pathPoint x="550" y="168"></pathPoint>
+				<pathPoint x="550" y="460"></pathPoint>
+				<pathPoint x="750" y="460"></pathPoint>
 			</relation>
 			<relation source="Документ.ПриходТовара" target="Справочник.Склады">
-				<pathPoint x="1375" y="358"></pathPoint>
-				<pathPoint x="1375" y="406"></pathPoint>
-				<pathPoint x="1346" y="406"></pathPoint>
-				<pathPoint x="700" y="438"></pathPoint>
+				<pathPoint x="1150" y="303"></pathPoint>
+				<pathPoint x="1150" y="417"></pathPoint>
+				<pathPoint x="865" y="417"></pathPoint>
+				<pathPoint x="865" y="433"></pathPoint>
 			</relation>
 			<relation source="РегистрНакопления.ТоварныеЗапасы" target="Справочник.Товары">
-				<pathPoint x="700" y="106"></pathPoint>
-				<pathPoint x="1690" y="106"></pathPoint>
-				<pathPoint x="1690" y="438"></pathPoint>
+				<pathPoint x="650" y="115"></pathPoint>
+				<pathPoint x="1375" y="115"></pathPoint>
+				<pathPoint x="1375" y="460"></pathPoint>
+				<pathPoint x="1250" y="460"></pathPoint>
 			</relation>
 			<relation source="РегистрНакопления.ТоварныеЗапасы" target="Документ.ПриходТовара">
-				<pathPoint x="700" y="106"></pathPoint>
-				<pathPoint x="1390" y="106"></pathPoint>
-				<pathPoint x="1390" y="223"></pathPoint>
+				<pathPoint x="650" y="115"></pathPoint>
+				<pathPoint x="1150" y="115"></pathPoint>
+				<pathPoint x="1150" y="248"></pathPoint>
+			</relation>
+			<relation source="РегистрНакопления.ТоварныеЗапасы" target="Документ.ОперацияПоУчетуТоваров">
+				<pathPoint x="450" y="90"></pathPoint>
+				<pathPoint x="400" y="90"></pathPoint>
+			</relation>
+			<relation source="Документ.РасходТовара" target="Справочник.Товары">
+				<pathPoint x="950" y="303"></pathPoint>
+				<pathPoint x="1135" y="319"></pathPoint>
+				<pathPoint x="1135" y="433"></pathPoint>
 			</relation>
 			<relation source="Документ.ПриходТовара" target="Справочник.Товары">
-				<pathPoint x="1475" y="290"></pathPoint>
-				<pathPoint x="1660" y="290"></pathPoint>
-				<pathPoint x="1660" y="438"></pathPoint>
+				<pathPoint x="1150" y="303"></pathPoint>
+				<pathPoint x="1150" y="417"></pathPoint>
+				<pathPoint x="1150" y="433"></pathPoint>
 			</relation>
-			<relation source="Документ.ПриходТовара" target="Справочник.Контрагенты">
-				<pathPoint x="1375" y="358"></pathPoint>
-				<pathPoint x="1375" y="477"></pathPoint>
-				<pathPoint x="1375" y="653"></pathPoint>
-			</relation>
-			<relation source="РегистрНакопления.Взаиморасчеты" target="Справочник.Контрагенты">
-				<pathPoint x="300" y="143"></pathPoint>
-				<pathPoint x="300" y="386"></pathPoint>
-				<pathPoint x="825" y="386"></pathPoint>
-				<pathPoint x="825" y="695"></pathPoint>
-				<pathPoint x="1275" y="695"></pathPoint>
+			<relation source="Документ.РасходТовара" target="Справочник.Склады">
+				<pathPoint x="850" y="303"></pathPoint>
+				<pathPoint x="850" y="433"></pathPoint>
 			</relation>
 		</relations>
 	</tab>
